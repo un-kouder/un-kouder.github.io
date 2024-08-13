@@ -6,13 +6,31 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="正则表达式概述 正则表达式，又称规则表达式**,**（Regular Expression，在代码中常简写为regex、regexp或RE），是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为”元字符”），是计算机科学的一个概念。正则表达式使用单个字符串来描述、匹配一系列匹配某个语法规则的字符串，通常被用来检索、替换那些符合某个模式（规则）的文本。   正则表达式是一个">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2024/08/13/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%E4%B9%8B%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="正则表达式概述 正则表达式，又称规则表达式**,**（Regular Expression，在代码中常简写为regex、regexp或RE），是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为”元字符”），是计算机科学的一个概念。正则表达式使用单个字符串来描述、匹配一系列匹配某个语法规则的字符串，通常被用来检索、替换那些符合某个模式（规则）的文本。   正则表达式是一个">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/jpeg/25414438/1683098321179-835eede1-d7e9-4062-9357-86c27be50bcd.jpeg#averageHue=%23cde8db&clientId=ucad11d8b-a8d4-4&from=ui&id=ucd92a46a&originHeight=794&originWidth=1200&originalType=binary&ratio=1.375&rotation=0&showTitle=false&size=72438&status=done&style=none&taskId=ud063ec3c-0b65-4bf5-a7bb-699806ae4e1&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586767938916-517a18c0-443e-437b-a843-ea152cc70835.png#averageHue=%23f4f4f4&height=413&id=HJpcN&originHeight=413&originWidth=691&originalType=binary&ratio=1&rotation=0&showTitle=false&size=59511&status=done&style=none&title=&width=691">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586768063939-efadbdf4-c4c1-483a-9d46-0944d1b665c5.png#averageHue=%23f8f8f8&height=269&id=TaBcw&originHeight=269&originWidth=691&originalType=binary&ratio=1&rotation=0&showTitle=false&size=21988&status=done&style=none&title=&width=691">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586768239863-d3740906-9acd-41d8-9ebb-5379f3aa3e12.png#averageHue=%23f4f4f4&height=270&id=qAHm3&originHeight=270&originWidth=689&originalType=binary&ratio=1&rotation=0&showTitle=false&size=33674&status=done&style=none&title=&width=689">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586768251708-24d57228-dc8d-4fee-9221-ad40b8895b9f.png#averageHue=%23f5f5f5&height=78&id=bN8SD&originHeight=78&originWidth=688&originalType=binary&ratio=1&rotation=0&showTitle=false&size=11200&status=done&style=none&title=&width=689">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586775913828-be6de615-4086-4aa4-8c56-052d26f2ed44.png#averageHue=%23f5f5f5&height=462&id=ABrpJ&originHeight=462&originWidth=689&originalType=binary&ratio=1&rotation=0&showTitle=false&size=64284&status=done&style=none&title=&width=689">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586775931118-e495a419-0ec3-4a19-90d0-213edac4f7f4.png#averageHue=%23f5f5f5&height=94&id=YV0uC&originHeight=94&originWidth=689&originalType=binary&ratio=1&rotation=0&showTitle=false&size=12266&status=done&style=none&title=&width=689">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586776056312-baff7c9f-40c4-4e39-9a2d-bc95a230b5cc.png#averageHue=%23f3f3f3&height=347&id=bxars&originHeight=347&originWidth=688&originalType=binary&ratio=1&rotation=0&showTitle=false&size=51392&status=done&style=none&title=&width=688">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586776273542-252fff9e-43ae-4e1b-a8d7-848642dcc4fd.png#averageHue=%23f5f5f5&height=342&id=HlGBM&originHeight=342&originWidth=689&originalType=binary&ratio=1&rotation=0&showTitle=false&size=45251&status=done&style=none&title=&width=689">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586776305557-19fb6d00-d7c0-44de-9732-7f76d596fa8d.png#averageHue=%23f5f5f5&height=522&id=qPzkX&originHeight=522&originWidth=689&originalType=binary&ratio=1&rotation=0&showTitle=false&size=66034&status=done&style=none&title=&width=689">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586776381403-f2ae0a3d-b1a0-4487-af07-70ac3c955d05.png#averageHue=%23ededed&height=415&id=K1CWh&originHeight=415&originWidth=691&originalType=binary&ratio=1&rotation=0&showTitle=false&size=87174&status=done&style=none&title=&width=691">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586777002061-c7d9cb00-f28f-4e94-89c5-48f8aa487138.png#averageHue=%23f4f5f6&height=191&id=qrSFA&originHeight=191&originWidth=689&originalType=binary&ratio=1&rotation=0&showTitle=false&size=20229&status=done&style=none&title=&width=689">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/1182303/1586777042202-47c06dff-2a84-43a2-92bc-067292a4fbcc.png#averageHue=%23f2f3f4&height=173&id=G8ex1&originHeight=173&originWidth=689&originalType=binary&ratio=1&rotation=0&showTitle=false&size=29330&status=done&style=none&title=&width=689">
+<meta property="article:published_time" content="2024-08-13T07:49:29.041Z">
+<meta property="article:modified_time" content="2023-09-08T13:32:36.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2023/jpeg/25414438/1683098321179-835eede1-d7e9-4062-9357-86c27be50bcd.jpeg#averageHue=%23cde8db&clientId=ucad11d8b-a8d4-4&from=ui&id=ucd92a46a&originHeight=794&originWidth=1200&originalType=binary&ratio=1.375&rotation=0&showTitle=false&size=72438&status=done&style=none&taskId=ud063ec3c-0b65-4bf5-a7bb-699806ae4e1&title=">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -67,9 +85,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-数据解析之正则表达式" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-数据解析之正则表达式" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/08/13/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%E4%B9%8B%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="article-date">
   <time class="dt-published" datetime="2024-08-13T07:49:29.041Z" itemprop="datePublished">2024-08-13</time>
@@ -129,62 +145,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/08/13/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2024-08-13T05:48:27.491Z" itemprop="datePublished">2024-08-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/08/13/hello-world/">Hello</a>
-    </h1>
+    <a href="/2024/08/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/08/13/hello-world/" data-id="clzs4gyrl0000qwlw8v1y208v" data-title="Hello" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
